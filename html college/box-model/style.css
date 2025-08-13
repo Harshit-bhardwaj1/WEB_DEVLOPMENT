@@ -1,0 +1,85 @@
+/* M.M.M.M.Imp page */
+
+/* bos model works on block elements */
+
+/* sabse pahle ye line likhni hoti hai bhut imp h agar kuch na aata ho to ye yaad honi chahiye */
+/* kyu ki browser apni margin padding wagera lagata h isilye pahle usko null karte h */
+/* 0 ke "px" likhne ki jarurat nhi hoti */
+
+*{
+    margin: 0;
+    padding: 0;
+
+    /* border box se jo content area hota h usme se kam hota h padding, border wagera */
+    /* lekin margin nhi hogi isme include kyu ki margin is not part of element */
+    box-sizing: border-box;
+
+    /* content box expand karne dega  */
+    box-sizing: content-box;
+}
+
+
+div{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+
+    /* margin is not part of element */
+    margin: 100px;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+/* interview ques */
+/* box model ki properties only block elements pe milti h inline elements pe nhi milti */
+span{
+    /*  sirf block likhne se inline wale block ki trah behave karte h */
+    /* display: block; */
+
+    /* isliye hum inline-block likhte jisse wo inline ki tarh behave karte h or block ki properties bhi follow karte h */
+    display: inline-block;
+
+    /* jab display none karte h to wo jagah bhi occupy nhi karte */
+    /* display: none; */
+
+    /* lekin jab visibility none karte to jagah lete h but dikhte nhi h */
+    /* differce pucha jata h display or visibility mein */
+    visibility: hidden;
+
+
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+
+    margin: 1px;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+
+/*  Margin collapse */
+
+/*  isme agar do box bane huye to jiski margin badi hogi wo lagegi 
+    sirf ek bar or niche wale ki nullify ho jaygegi */
+
+.box{
+    background-color: aqua;
+}
+
+.box1{
+    margin: 25px;
+    color: yellow;
+    padding: 10px;
+    border: 2px solid red;
+    height: 200xpx;
+    box-sizing: border-box;
+}
+
+.box{
+    margin: 25px;
+    color: red;
+    padding: 10px;
+    border: 2px solid black;
+    height: 200xpx;
+    box-sizing: border-box;
+}

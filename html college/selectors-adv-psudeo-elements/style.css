@@ -1,0 +1,27 @@
+/* first line jitni bhi badi ho wo change ho jayegi */
+
+h1::first-line{
+    color : red;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+p::first-letter{
+    font-size: 100px;
+    color: green;
+}
+
+h4::after{
+    content: "from coding blocks";
+}
+
+h4::before{
+    content: "hello guys";
+}
+
+h4{
+    /* color: rgb(128, 0, 255) */
+    /* color: rgba(128, 0, 255, 1) */
+    color: #479af4ff;
+    /* color: #479af400; */
+}

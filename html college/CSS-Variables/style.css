@@ -1,0 +1,40 @@
+/* "root" likte h humm "global" variable declare karne ke liye */
+/* variable "string", "int" bhi ho sakta h */
+:root{
+    --color: pink;
+    --seccolor: rgb(245, 44, 77);
+    --defpad: 23px;
+    --defop: 0.2;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: var(--color);
+    /* background-color: rgb(29, 224, 29); */
+}
+
+ol{
+    /* isse list ke item niche nhi jate h */
+    display: flex;
+}
+
+ol li{
+    opacity: var(--defop);
+    list-style: none;
+    padding: var(--defpad);
+    margin: 2px;
+}
+
+ol li:first-child{
+    /* local variable */
+    --color: brown;
+    background-color: var(--color);
+    border: 2px solid var(--seccolor);
+}
+.container{
+    background-color: var(--seccolor);
+    /* background-color: rgb(112, 224, 112); */
+}

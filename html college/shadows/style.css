@@ -1,0 +1,21 @@
+/* syntax
+        box-shadow : h-offset v-offset blur spread color inset; */
+
+.box{
+    border: 2px solid violet;
+    padding: 34px;
+    box-shadow: 5px 15px 5px #a16565;
+}
+
+.textshadow{
+    text-shadow: 1px 5px 2px #a11683;
+    outline: 1px solid black;
+
+    /* isse hum outline ko bada kar sakte h */
+    outline-offset: 19px;
+}
+
+/* outlines : width style color  */
+
+/* outline border ke bhar aati h aur box model ka part nhi hoti h */
+

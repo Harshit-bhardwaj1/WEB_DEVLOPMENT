@@ -1,0 +1,49 @@
+/* if specitivity is equal then it follow "top=to-bootom" approach */
+
+
+/* the specitivity of element selector is 1 */
+h1{
+    color: white;
+}
+
+/* the specitivity of class selector is 10 */
+
+.yellow{
+    color: yellow;
+}
+
+/* the specitivity of class selector is 10 */
+
+.cred{
+    color: red;
+}
+
+/* the specitivity of class selector is 10 */
+
+.cpurple{
+    color: purple;
+}
+
+/* the specitivity of attribute selector is 10 */
+
+[data-x=a]{
+    color: pink;
+}
+
+/* the specitivity of element and class selector is 1+10 */
+
+h1.yellow{
+    color: darkgreen;
+}
+
+
+/* ques  */
+
+/* the specitivity of this selector is 1+ 10 + 10 + 10 + 10 = 41*/
+
+/*  pseudo  class se 10 aur ho jati h */
+
+/* yaha [href] ke mtlb ye h hi ki agar href h to  */
+/* a.harryclass.rohan-class[href]:hover{
+    color: aqua;
+} */

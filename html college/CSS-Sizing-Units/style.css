@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* px is 196 of an inch */
+
+/* "vw" mtlb jitni viewport ki width hogi utni le lega 
+    or isme horizontal scroll bar nhi aata kyu ki width viewport ke barabar hoti h */
+
+/* "em" se jo font-size inherit hota uska double ho jata h */
+
+/*  "rem" mtlb root element ke font-size ke hisab se change*/
+
+/* for pc       vmin = height
+   for moblie   vmin = width */
+
+/* we can also use "vh" instead of "vmin" for pc */
+
+/* "min height" se hum website ki body ko min height de sakte h or max jitna content hoga utni hogi */
+
+/* "%" mtlb apne parent ke hisab se font change hona */
+
+.box{
+    border: 2px solid black;
+    background-color: aqua;
+    width: 233px;
+    width: 100vw;
+}
+
+/* margin "auto" se dono side se margin lagti h 
+    lekin sirf "block" elements me hoti h "inline" me nhi*/
+
+#box2{
+    background-color: yellow;
+    width: 80vw;
+    min-height: 80vh;
+    
+    margin: auto;
+
+    /* isse ye uppar wale container se 23px niche ho jaeyga or margin lag
+        jayegi left right se */
+    margin: 23px auto;
+}
+
+/* inherit font size of box 2 */
+/* #box2 p{
+    font-size: 2em;
+} */
+
+/* html{
+    font-size: 32px;
+} */

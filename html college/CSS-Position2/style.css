@@ -1,0 +1,78 @@
+/* default = static */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}
+
+
+/* offsets (left,rightt,top, bottom)does not work in static */
+
+#static #middle{
+    position: static;
+    top: 100px;
+    left: 100px;
+}
+
+/* relative offest accept karta h */
+/* box apni original position se shift krta h */
+
+/* imp word:- original position */
+#relative #middle{
+    position: relative;
+    /* top: 50px;
+    left: 50px; */
+}
+
+
+/* M.M.M.M.IMP  */
+/* ABSOLUTE depends on the recently positioned parent except static*/
+
+/* 1-BIT:- absolute me ek layer uppar chala jata h aur baki ke niche sheet ke elements uske niche aa jate h kyu ki fole of code is left to right and top to bottom */
+/* 2-bit:- jo box hota h wo recently positioned parent ke acc set hota h aur agar kahi nhi kiya h position to body ke acc set ho jayega */
+/* positon koi bhi ho skti h bss "static" na ho */
+
+#absolute{
+    position: relative;
+}
+
+#absolute #middle{
+    position: absolute;
+    /* top: 50px;
+    left: 50px; */
+}
+
+
+/* FIXED always works acc to "BODY" chahe hum parent ko bhi positon dede */
+/* FIXED DOES FOLLOW OFFSETS */
+#fixed{
+    position: relative;
+}
+
+#fixed #middle{
+    position: fixed;
+    top: 0px;
+    left: 100px;
+}
+
+
+/* STICKY is mixture of "RELATIVE" and "FIXED" */
+/* STICKY DOES FOLLOW OFFSETS */
+#sticky{
+    border: 1px solid red;
+    height: 500px;
+}
+
+#sticky #middle{
+    position: sticky;
+    top: 50px;
+    left: 10px;
+}

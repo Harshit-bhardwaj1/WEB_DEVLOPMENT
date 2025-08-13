@@ -1,0 +1,23 @@
+/* float se image ke left aur right me text aa jata h */
+
+/* clear mtlb apne left, right aur both se kisi ko float nhi karne deta h */
+/* display: flow-root se overflow nhi hota h mtlb border pura image ko cover kar lega*/
+
+
+img{
+    float: left;
+
+    display: flow-root;
+}
+
+.cards{
+    border: 2px solid black;
+}
+
+.card{
+    border: 2px solid red;
+}
+
+.cards:nth-child(2){
+    clear: both;
+}

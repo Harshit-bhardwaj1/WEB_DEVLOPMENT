@@ -1,0 +1,37 @@
+
+/* @media  not/only datatype and (expression){
+    css code;
+} */
+
+/* screen mtlb wo screen ke according set ho jayegi */
+
+body{
+    background-color: blue;
+}
+
+@media only screen and (max-width: 455px){
+    body{
+        background-color: red;
+    }
+
+    .boxes{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body{
+        background-color: yellow;
+    }
+}
+.boxes{
+    display: flex;
+}
+
+.box{
+    width: 344px;
+    height: 344px;
+    padding: 3px;
+    margin: 3px;
+    background-color: aliceblue;
+}

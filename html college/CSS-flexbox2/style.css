@@ -1,0 +1,92 @@
+/* M.M.IMP */
+
+/* FLEXBOX is 1-dimentional property but "GRID" is 2-Dimentional */
+
+/* INLINE-BLOCK, FLEXBOX, GRID, MEDIA QUERIES all are used for responsive behaviour */
+
+/* INLINE BLOCK is a CHILD PROPERTY mtlb isme hume har ek element ke liye individual dena padta h agar element alag h to */
+
+/* FLEXBOX is a PARENT PROPERTY */
+
+/* DEFAULT DIRECTION OF FLEX IS ROW */
+
+/* MAIN-AXIS IS THE DIRECTION OF FLEX */
+
+/* MAIN AXIS IS DEPENDENT ON FLEX AND CROSS-AXIS IS DEPENDENT ON MAIN-AXIS*/
+
+/* JUSTIFY-CONTENT WORKS ONLY ON MAIN-AXIS THAT'S WHY WE CHHANGE FLEX-DIRECTION */
+
+/* ALIGN-ITEMS WORKS ON CROSS-AXIS . CENTRE, START, END ARE DIFF ALIGN-ITEMS PROPERTIES */
+
+/* JUSTIFY-CONTENT= SPACE-AROUND ME SPACE AA JATA H BUT DO BOX KE BICH ME DOUBLE SPACE HOTA H CORNER SE  */
+
+/* SPACE-BETWEEN ME SPACE CRONER PE NHI AATA J */
+
+/* SPACE-EVENLY ME SPACE CORNER AUR BICH ME EVEN HOTA H */
+
+/* FLEX-WRAP= NOWRAP IS DEFAULT MTLB WO AGLI LINE ME NHI JAYENGE BLKI SHRINK HOTE JAYENGE SO USE WRAP FOR NEXT LINE */
+
+/* FLEX-WRAP = WRAP FOR NEXT LINE */
+
+/* ALIGN-CONTENT= FLEX-END SE SARE BOX NICHE SE START HONGE AISE FLEX-START SE STARTING SE AUR CENTER SE CENTRE ME AA JAYNGE */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+
+    height: 100vh;
+    border: 10px solid red;
+
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+
+    /* justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+    /* align-items: center; */
+
+    /* flex-wrap: nowrap;
+    flex-wrap: wrap; */
+
+    /* align-content: flex-end;
+    align-content: center; */
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+
+    /* CHILD PROPERTY */
+    /* display: inline-block; */
+}
+
+
+/* child properties */
+
+/* YE SAB PROPERTIES INSPECT ME DIKHTI HAI */
+
+/* FLEX-GROW ME RATIO HOTA H KOI BHI NUMBER DEDO WO SIRF RATIO HOGA W.R.TO OTHER BOXES */
+
+/* FLEX-GORW SE BOX GROW HOTE H ACC TO THEIR RATIO */
+
+/* FLEX-SHRINK SE SHRINK HONGE ACC TO RATIO W.R.TO OTHER BOXES */
+
+/* ALIgn-SELF SE KOI INDIVIDUAL ALIGN KAREGA APNE AAP KO */
+#second{
+    flex-grow: 3;
+    flex-shrink: 2;
+    align-self: center;
+}
+
+#fourth{
+    flex-grow: 2;
+    flex-shrink: 2;
+    align-self: flex-end;
+}

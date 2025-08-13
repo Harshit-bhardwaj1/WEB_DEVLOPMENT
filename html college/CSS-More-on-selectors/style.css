@@ -1,0 +1,55 @@
+
+/* agar "box" first child h to ye change ho jayega */
+.box:first-child{
+    background-color: antiquewhite;
+}
+
+
+.boxes *{
+    color: blue;
+    border: 2px solid black;
+}
+
+/* attribute selector */
+
+[data-color="primary"]{
+    padding-top: 45px;
+}
+
+
+/* grouping with attribute */
+p, a, .box, [data-color="primary"]{
+    padding-top: 45px;
+}
+
+.box:nth-child(even){
+    background-color: red;
+}
+
+.box:nth-last-child(1){
+    background-color: aqua;
+}
+
+
+/* we can add content through CSS */
+.boxes::after{
+    content: "this is also a box";
+    color: red;
+}
+
+.boxes::before{
+    content: "this is before box";
+    color: rebeccapurple;
+}
+
+
+/* isse select karne pe jo karna h wo hota h */
+::selection{
+    color: brown;
+    background-color: black;
+}
+
+
+input::placeholder{
+    color: red;
+}

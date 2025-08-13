@@ -1,0 +1,45 @@
+/* element selector */
+h1{
+    color: red;
+}
+
+/* ID selector*/
+#sam{
+    font-size: 100px;
+}
+
+/* CLASS selector */
+.vohra{
+    background-color: yellow;
+}
+
+/* UNIVERSAL selector */
+
+*{
+    border: 5px solid red;
+    /* border: 9px dotted green;
+    border: 5px dashed black; */
+}
+
+/* attribute selector */
+input[type = "text"]{
+    background-color: powderblue;
+}
+
+input[type="password"]{
+    background-color: green;
+}
+
+a[href="http://google.com"]{
+    font-size: 200px;
+    color: red;
+}
+
+a[href="http://facebook.com"]{
+    font-size: 10px;
+    color: blue;
+}
+
+div{
+    background-color: red;
+}

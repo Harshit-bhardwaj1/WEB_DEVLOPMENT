@@ -1,0 +1,34 @@
+/*  default font size = 16px */
+p{
+    /* ye line wise chalti h agar pahli nhi huyi to dusri chalegi */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    font-style: italic;
+    font-weight: 300;
+
+    text-decoration: underline;
+
+    text-transform: capitalize;
+
+    line-height: 4;
+}
+
+h2{
+    text-align: center;
+
+    /* inn dono ko sath me likh ke hi underline hogi color se */
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-style: dotted;
+
+    text-decoration-thickness: 7px;
+}
+
+.lorem{
+    border: 2px solid red;
+    width: 45px;
+
+        /* isse jo bhi text border ki width ke bahr jayga wo hide ho jayega */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

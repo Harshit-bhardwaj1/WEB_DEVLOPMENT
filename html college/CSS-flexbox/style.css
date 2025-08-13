@@ -1,0 +1,95 @@
+
+/* container properties */
+
+/* display "flex" ko hume conatiner me dalna hota h kyu ki ussi me sab items h or isse sab left to right ho jate h */
+/* "flexbox" me items direction se hote h jo left to right hoti h default */
+
+
+/* "MAIN LINE" wo line hoti h jo flex-box ki direction hoti h */
+/* "CROSS LINE" main line ke vertical line hoti h*/
+
+/* agar flex-direction : row h to "MAIN LINE" horizntal hogi or "CROSS LINE" vertical hogi */
+
+/* "justify-content" or "align-items" MAIN LINE ko dekh kar "centre", "start", "end" karte h*/
+
+/* "align-content" hum jab use karte h jab ek se jadaa line hoti h or wrap kari huyi hoti h */
+
+/* imp:- there is no "justify-items" */
+
+.container{
+    border: 2px solid red;
+    display: flex;
+    height: 80vh;
+    
+    /* isse horizontally centre ho jate h */
+    /* justify-content: center; */
+    
+    /* isse vertically centre ho jate h */
+    align-items: center;
+    align-content: center;
+
+    /* isse column wise start honge */
+    /* flex-direction: column; */
+    
+    /* isse column me niche se start honge */
+    /* flex-direction: column-reverse; */
+    
+   
+    /* "flex-wrap" se content agli line me aa jata h overflow nhi karta  */
+    /* flex-wrap: wrap; */
+
+    /* isse ye ulta wrap ho jate h niche se */
+    /* flex-wrap: wrap-reverse; */
+
+    /* isse hum do chiz ek sath kar sakte h pahle ye btana h wrap kis direction me karna h or phir wrap likh do */
+    /* flex-flow: row wrap; */
+
+    /* isse hum row or column ke bich me gap de skate h */
+    gap: 40px;
+    row-gap: 10px;
+    column-gap: 20px;
+    /* ek sath bhi de sakte h pahle row phir column */
+    gap: 20px 30px;
+}
+
+
+/* item properties */
+
+/* jiska "order" sabse kam hoga wo pahle aayega  */
+/* default "order" 0 hota h sabka isilye 4-box end me chala gya */
+
+/* "flex-grow" se hum item ka size set kar skate w.r.to other items */
+/* default "flex-grow" 0 zero hota h */
+
+
+/* "flex-shrink" ka mtlb hota ha ki wo apne aap k kitna chhotakar sakta h w.r.to others iske wrap hatana padega */
+
+.item{
+    /* flex-grow: 1; */
+    width: 92px;
+    height: 92px;
+    margin: 4px;
+    border: 2px solid black;
+    background-color: blueviolet;
+}
+
+.item1{
+    /* flex-grow: 2; */
+    flex-shrink: 2;
+
+    /* isse hum kisi bhi individually ko align kar sakte h */
+    align-self: flex-start;
+}
+
+.order-1{
+    order: 1;
+
+}
+
+.order-2{
+    order: 2;
+}
+
+.order-3{
+    order: 3;
+}

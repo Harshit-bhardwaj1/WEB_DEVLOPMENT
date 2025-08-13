@@ -1,0 +1,33 @@
+/* methode 2 */
+
+.container{
+    border: 2px solid black;
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "side article article"
+                         "footer footer footer"  ;
+}
+
+.items{
+    height: 45px;
+    border: 2px solid red;
+}
+
+.item-1{
+    grid-area: nav;
+}
+.item-2{
+    grid-area: side;
+}
+.item-3{
+    grid-area: article;
+}
+
+.item-4{
+    grid-area: footer;
+}
+
+/* overlap */
+.item-5{
+    grid-area: nav;
+}

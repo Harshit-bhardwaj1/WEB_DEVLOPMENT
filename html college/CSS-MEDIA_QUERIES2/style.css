@@ -1,0 +1,70 @@
+
+div{
+    width: 500px;
+    border: 2px solid black;
+    margin: 20px auto;
+}
+
+h1{
+    font-size: 50px;
+}
+
+
+/* MAX-WIDTH ME SABSE BADA NUMBER SABSE UPPAR LIKHTE H NHI TO JO CHOTE WALE UNKA EFFFECT NHI DIKHEGA BSS SABSE BADE WALA KA DIKHEGA HAR JAGAH */
+
+/* 900PX > 600PX */
+@media screen and (max-width=900px){
+    h1{
+        color: pink;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width=600px) {
+    h1{
+        color: green;
+        font-size: 100px;
+    }
+}
+
+
+/* min-width me sabse chota wla sabse uppar aayega */
+
+@media screen and (min-width=600px) {
+    h1{
+        color: green;
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width=900px) {
+    h1{
+        color: green;
+        font-size: 100px;
+    }
+}
+
+/* LANDSCAPE = WIDTH > HEIGHT */
+
+@media screen and (orientation:landscape) {
+    h1{
+        color: chartreuse;
+    }
+}
+
+/* PORTRAIT = HEIGHT > WIDTH */
+
+@media screen and (orientation:portrait) {
+    h1{
+        color: orange;
+    }
+}
+
+
+/* two media queries */
+/* "," == OR MTLB AGAR EK BHI TRUE HUYA TO CHAL JAYEGA LEKIN MEDIA SCREEN HONA CHAHIYE KYU KI WO AND ME H. */
+@media screen and (orientation:portrait), (max-width: 560px){
+    h1{
+        color:blueviolet
+    }
+}

@@ -1,0 +1,22 @@
+
+/* ye apne parent pe depend karte h */
+
+section{
+    width: 500px;
+    background-color: aqua;
+}
+
+div{
+    width: 100%;
+    width: 50%;
+    background-color: orange;
+    border: 1px dashed red;
+}
+
+/* ye inheritance se ho raha h kyu ki font size inheritance follow karta h */
+/* default pixel size=16px; */
+/* rem root element ka double karta h */
+ul>li{
+    font-size: 2em;
+    font-size: 2rem;
+}

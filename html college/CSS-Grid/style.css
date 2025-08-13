@@ -1,0 +1,62 @@
+/* "grid" me hum define kar sakte h kitni rows ho aur kitni columns ho */
+
+/* padding use nhi karni flexbox aur grid me */
+
+/* "fr"= fraction of avaliable space */
+
+.container{
+    width: 80vw;
+    height: 100vh;
+    border: 2px solid black;
+    display: grid;
+
+    /* isse hum apni grid ko rows and columns me divide kar sakte h */
+    /* grid-template-columns: 120px 100px; */
+
+    /* naming grid  */
+    /* grid-template-columns: [pahla] 120px [dusra] 100px [teesra] 100px; */
+    
+    /* using "fr" unit */
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+
+    /* grid-template-rows: 100px 100px 100px; */
+
+    /* "gap" we can make gap between two boxes */
+    /* gap: 20px; */
+    row-gap: 10px;
+    column-gap: 44px;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.items{
+    border: 2px solid red;
+    width: 55px;
+    height: 55px;
+
+}
+
+.item-4{
+    /* ye grid cell me hi lagti h */
+    align-self: self-start;
+
+    /* isse hum ye batate h ki hume kaha se kaha tak rakhna h box */
+    /* grid-row: 1/2;
+    grid-column: 1/2; */
+    /* cam also write */
+    /* grid-column: pahla/dusra; */
+
+    /* or hum aise bhi kar sakte h same bt h but uppar wala short h */
+    /* grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2; */
+}
+
+.item-1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}

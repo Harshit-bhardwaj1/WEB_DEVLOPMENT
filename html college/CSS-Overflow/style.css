@@ -1,0 +1,29 @@
+/* "auto" se apne aap scroll bar aata h agar overflow ho raha h to */
+
+/* "clip" se scroll bar nhi aata or baki ki lines bhi nhi dekh sakte */
+
+/* we can also manage horizontal and vertical scroll bar */
+div{
+    width: 45vw;
+    height: 20vh;
+    border: 2px solid black;
+
+    /* overflow: clip; */
+
+    overflow-x: scroll;
+    overflow-y: scroll;
+
+    /* both */
+    overflow: auto hidden;
+    overflow: hidden auto;
+    
+    overflow: scroll;
+
+    /* "nowrap" se same line me ho jati h lines
+     agli me nhi aati or scroll bar horizontally aa jayega*/
+    
+    /* overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; */
+
+}

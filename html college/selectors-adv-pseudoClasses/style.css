@@ -1,0 +1,35 @@
+div{
+    color: red;
+}
+
+div:hover{
+    color: green;
+}
+
+input{
+    background-color: red;
+}
+input:focus{
+    background-color: blue;
+    font-size: 100px;
+}
+
+a{
+    color: blue;
+}
+
+a:active{
+    color: pink;
+}
+a:visited{
+    color: aqua;
+}
+
+li:nth-of-type(2n){
+    color:bisque;
+}
+
+/*  mtlb p jaha bhi first child hoga wo change ho jayega */
+p:first-child{
+    background-color: yellow;
+}

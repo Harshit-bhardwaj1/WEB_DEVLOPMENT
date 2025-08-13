@@ -1,0 +1,23 @@
+/* we can include the marker inside the lists */
+
+nav ol li{
+    border: 2px solid black;
+    background-color: yellow;
+
+    list-style: devanagari;
+
+    /* can add emoji or symbols in place of marker */
+    /* list-style-type: "";   */
+    list-style-position: inside;
+
+    /* we can add the image instead of marker */
+    list-style-image: url();
+
+
+    /* we can also add emoji or image in place of marker inside the list 
+        at the same time */
+
+    /* list-style: disc inside url; */
+    
+    list-style: disc inside ;
+}

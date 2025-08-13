@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* postion by default "static" hota h */
+/* static wala offsets properties nhi leta h */
+/* offsets yani left, right, top, bottom se jo margin wagera dete h wo hoti h*/
+
+/* absolute me box ek layer uppar aa jata h */
+/* absolute me offsets lete h */
+
+
+/* relative ek alag layer nhi jata wo parent ke acc hi rahta h */
+/* relative bhi offsets leta h */
+
+/* "Relative" se change kar sakte h hum position */
+
+/* "top" or "bottom" and "left" or "right" me se ek hi use karte h*/
+
+/* "Absolute" me box check karta h apne uppar wale parent ko uski
+    position static na ho kuch aur ho to wo box uske 
+    hisab se arrange ho jaygega nhi to uske uppar wale 
+    ko check karega aur end html ke hisab se lag jayega */
+
+/* "fixed" me box niche fix ho jata h baki chiz move karti h lekin wo box fix rahta h */
+
+/* "sticky" me box stick ho jata h jab tak hum uske tak hum usee tak
+    scroll nhi karte uske badd wo move hona start ho jata h */
+
+/* "transform", "filter" and "perspective" can also make an element look positioned */
+
+
+.parent{
+    position: absolute;
+
+    /* /* transform: translate(0); */
+    /* filter: invert(0); */
+    /* perspective: 0em; */
+
+    padding: 43px;
+    margin: 34px;
+    border: 3px solid black;
+}
+
+
+.box{
+    height: 133px;
+    width: 80vw;
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+    
+}
+
+.box1{
+    /* agar box 1 ko uppar lana h to  */
+    /* position: relative;
+    z-index: 1; */
+
+    position: absolute;
+    top: 1px;
+    left: 45vw;
+    background-color: aqua;
+}
+
+.box2{
+    background-color: beige;
+    /* position: relative;
+    top: -34px;
+    left: 45px; */
+}
+
+.box3{
+    background-color: blue;
+    position: fixed;
+    bottom: 0px;
+    left: 40vw;
+}
+.box4{
+    background-color: purple;
+}

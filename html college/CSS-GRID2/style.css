@@ -1,0 +1,59 @@
+
+/* GRID IS PARENT PROPERTY */
+
+/*  GRID FLOW:- DEFAULT DIRECTION IS ROW */
+
+/* NON CATERING ELEMENTS REMAIN AS IT IS. JINPE HUME KUCHH SIZE WAGERA NHI DIYA MTLB KUCH BHI KAAM NHI KIYA*/
+
+/* AUTOMATED CATERED ELEMENTS :- JO ELEMENTS RAH JATE H UNKO BOLTE H YANI NON CATERED. JAHA BHI AUTO WORD AAYE WO SIRF AUTOMATIC CATRED ELEMENTS KE LIYE HOTA H*/
+
+/* JAB HUM COLUMNS KO CATERED KARTE H TO SAB JITNI HEIGHT CHAHIYE USKE ACC AATE H AUR JAB SIRF ROWS KARTE H TO HEIGHT KAM HOTI H WIDTH JADA HOTI H .. YE PATA NHI H SAHI YA GALAT CHECK IT */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#container{
+    display: grid;
+    height: 90vh;
+
+    /* CATERED ELEMENTS */
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 100px 150px 100px;
+
+    /* isse elements jo bache huye h jinko catered hi kiya h wo automatically arrange ho jaynge  */
+    /* grid-auto-flow: column; */
+
+    /* isse ye rows me kam ho jaynge yani height, ye abhi kamm nhi karega kyu ki uppar columns likha huya h */
+    /* grid-auto-rows: 50px; */
+
+    /* isse columns me width kam ho jaynei */
+    /* grid-auto-columns: 50px; */
+
+}
+
+div{
+    background-color: red;
+    border: 1px solid black;
+}
+
+/* ye sab properties inpect me dekhni h  */
+.second{
+    background-color: lightgreen;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.fourth{
+    background-color: blue;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
